@@ -1,14 +1,14 @@
 package sreejithsnair.com.sjkeyboardrgb;
 
-import android.app.Service;
-import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
-import android.os.IBinder;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
+
+import java.util.List;
 
 public class SJKeyboardRGB extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
@@ -22,7 +22,6 @@ public class SJKeyboardRGB extends InputMethodService implements KeyboardView.On
         keyboardView = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
         keyboard = new Keyboard(this, R.xml.qwerty);
         keyboardView.setKeyboard(keyboard);
-        //keyboardView.setAnimation();
         keyboardView.setOnKeyboardActionListener(this);
         return keyboardView;
     }
@@ -43,7 +42,12 @@ public class SJKeyboardRGB extends InputMethodService implements KeyboardView.On
         playClick(primaryCode);
         switch(primaryCode){
             case Keyboard.KEYCODE_DELETE:
-                inputConnection.deleteSurroundingText(1,0);
+                CharSequence selectedText = inputConnection.getSelectedText(0);
+                if (TextUtils.isEmpty(selectedText)) {
+                    inputConnection.deleteSurroundingText(1, 0);
+                } else {
+                    inputConnection.commitText("", 1);
+                }
                 break;
             case Keyboard.KEYCODE_SHIFT:
                 isCaps = !isCaps;
