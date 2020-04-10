@@ -61,15 +61,11 @@
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:keyIcon="@drawable/ic_caps_lock" android:keyWidth="20%p" android:keyEdgeFlags="left" android:codes="-1" />
-        <Key android:keyLabel="z" android:codes="122" />
-        <Key android:keyLabel="x" android:codes="120" />
-        <Key android:keyLabel="c" android:codes="99" />
-        <Key android:keyLabel="v" android:codes="118" />
-        <Key android:keyLabel="b" android:codes="98" />
-        <Key android:keyLabel="n" android:codes="110" />
-        <Key android:keyLabel="m" android:codes="109" />
-        <Key android:keyIcon="@drawable/ic_backspace" android:keyWidth="20%p" android:keyEdgeFlags="right" android:codes="-4"/>
+        <Key android:keyIcon="\? \# \@" android:keyWidth="15%p" android:keyEdgeFlags="left" android:codes="63, 35, 64" />
+        <Key android:keyIcon="," android:keyWidth="10%p" android:keyEdgeFlags="left" android:codes="44" />
+        <Key android:keyIcon="@drawable/ic_space_bar" android:keyWidth="50%p" android:keyEdgeFlags="left" android:codes="32" />
+        <Key android:keyIcon="." android:keyWidth="10%p" android:keyEdgeFlags="left" android:codes="46" />
+        <Key android:keyIcon="@drawable/ic_done" android:keyWidth="15%p" android:keyEdgeFlags="right" android:codes="-4"/>
 
     </Row>
 
