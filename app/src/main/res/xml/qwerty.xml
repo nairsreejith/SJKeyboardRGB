@@ -35,7 +35,7 @@
     </Row>
 
     <Row>
-        <Key android:keyLabel="a" android:keyEdgeFlags="left" android:codes="97" />
+        <Key android:keyLabel="a" android:keyEdgeFlags="left" android:codes="97" android:horizontalGap="5%p" />
         <Key android:keyLabel="s" android:codes="115" />
         <Key android:keyLabel="d" android:codes="100" />
         <Key android:keyLabel="f" android:codes="102" />
@@ -43,7 +43,7 @@
         <Key android:keyLabel="h" android:codes="104" />
         <Key android:keyLabel="j" android:codes="106" />
         <Key android:keyLabel="k" android:codes="107" />
-        <Key android:keyLabel="l" android:keyEdgeFlags="right" android:codes="108" />
+        <Key android:keyLabel="l" android:keyEdgeFlags="right" android:codes="108"/>
 
     </Row>
 
@@ -61,10 +61,10 @@
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:keyIcon="\? \# \@" android:keyWidth="15%p" android:keyEdgeFlags="left" android:codes="63, 35, 64" />
-        <Key android:keyIcon="," android:keyWidth="10%p" android:keyEdgeFlags="left" android:codes="44" />
-        <Key android:keyIcon="@drawable/ic_space_bar" android:keyWidth="50%p" android:keyEdgeFlags="left" android:codes="32" />
-        <Key android:keyIcon="." android:keyWidth="10%p" android:keyEdgeFlags="left" android:codes="46" />
+        <Key android:keyLabel="\? \@" android:keyWidth="15%p" android:keyEdgeFlags="left" android:codes="63,64" />
+        <Key android:keyLabel="," android:keyWidth="10%p"  android:codes="44" />
+        <Key android:keyIcon="@drawable/ic_space_bar" android:keyWidth="50%p" android:codes="32" />
+        <Key android:keyLabel="." android:keyWidth="10%p" android:codes="46" />
         <Key android:keyIcon="@drawable/ic_done" android:keyWidth="15%p" android:keyEdgeFlags="right" android:codes="-4"/>
 
     </Row>
