@@ -1,5 +1,8 @@
 package sreejithsnair.com.sjkeyboardrgb;
 
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -23,6 +26,7 @@ public class SJKeyboardRGB extends InputMethodService implements KeyboardView.On
         keyboard = new Keyboard(this, R.xml.qwerty);
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(this);
+
         return keyboardView;
     }
 

@@ -56,7 +56,7 @@
         <Key android:keyLabel="b" android:codes="98" />
         <Key android:keyLabel="n" android:codes="110" />
         <Key android:keyLabel="m" android:codes="109" />
-        <Key android:keyIcon="@drawable/ic_backspace" android:keyWidth="15%p" android:keyEdgeFlags="right" android:codes="-5"/>
+        <Key android:keyIcon="@drawable/ic_backspace" android:keyWidth="15%p" android:isRepeatable="true" android:keyEdgeFlags="right" android:codes="-5"/>
 
     </Row>
 
